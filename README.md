@@ -60,7 +60,7 @@ This project extensively utilizes the following AWS services:
 
 The following diagram illustrates the end-to-end architecture of the FlashCommerce real-time analytics pipeline:
 
-![AWS Architecture Diagram](screenshots/architecture.png)
+![AWS Architecture Diagram](screenshots/architecture.gif)
 *Data flows from Kinesis Stream to S3 Bronze, processed by AWS Glue (Silver, Gold layers), cataloged by Athena, and visualized in QuickSight.*
 
 ## Data Pipeline Layers (Lakehouse Approach)

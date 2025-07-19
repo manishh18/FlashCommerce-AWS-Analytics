@@ -1,0 +1,51 @@
+event_time,event_type,user_id,session_id,device_type,referral_source,campaign_id,product_id,product_name,category,price,discount_percentage,stock_quantity,seller_id,seller_name,city,payment_type,customer_age_group,customer_gender,rating,promotion_active
+2025-06-04T18:53:00Z,price_change,U2318,S60271,tablet,email_campaign,C813,P178,Diamond Ring,Jewelry,9743.34,5,62,S580,Luxury Looms,Chennai,Debit Card,45-54,other,3.7,True
+2025-06-04T18:53:01Z,purchase,U1798,S57591,desktop,instagram,C846,P382,Treadmill,Fitness,19071.79,22,99,S347,Fit India,Kanpur,UPI,18-24,other,4.8,False
+2025-06-04T18:53:02Z,view,U5838,S91967,desktop,instagram,C156,P883,Smartphone,Electronics,11123.81,26,23,S845,Gadget Zone,Nashik,UPI,18-24,female,3.7,True
+2025-06-04T18:53:03Z,price_change,U5531,S99572,tablet,organic_search,C116,P218,Wall Art,Home Decor,1609.93,4,98,S714,Gadget Zone,Chennai,Net Banking,55+,female,4.7,False
+2025-06-04T18:53:04Z,stock_update,U1382,S88801,mobile,email_campaign,C584,P373,Pressure Cooker,Kitchen,2061.38,5,91,S115,Saree Emporium,Nagpur,UPI,18-24,female,4.6,False
+2025-06-04T18:53:05Z,purchase,U6522,S32464,tablet,instagram,C860,P326,Wall Art,Home Decor,943.76,28,36,S855,Gizmo Galaxy,Surat,Credit Card,55+,other,4.4,False
+2025-06-04T18:53:06Z,stock_update,U4265,S71450,desktop,google_ads,C427,P352,Self-Help Book,Books,525.52,5,15,S605,Eco Essentials,Agra,Credit Card,35-44,male,3.2,True
+2025-06-04T18:53:07Z,price_change,U4610,S46832,tablet,google_ads,C936,P477,Kolhapuri Chappal,Footwear,1689.0,24,82,S651,Wellness World,Ludhiana,Credit Card,35-44,female,4.5,False
+2025-06-04T18:53:08Z,price_change,U4470,S94647,tablet,google_ads,C116,P886,Laptop,Electronics,25134.73,3,26,S744,Fashion Fiesta,Kolkata,Net Banking,35-44,other,4.0,False
+2025-06-04T18:53:09Z,add_to_cart,U5728,S16568,desktop,friend_referral,C728,P241,Silver Anklet,Jewelry,2323.49,18,54,S476,Luxury Looms,Surat,UPI,45-54,female,3.1,False
+2025-06-04T18:53:10Z,price_change,U7224,S57700,desktop,facebook_ads,C401,P881,Running Shoes,Footwear,2209.68,10,63,S747,Tech Trends,Agra,UPI,45-54,other,4.5,True
+2025-06-04T18:53:11Z,stock_update,U234,S47933,desktop,email_campaign,C171,P921,Dumbbell Set,Fitness,682.06,4,53,S814,Eco Essentials,Hyderabad,Cash on Delivery,18-24,other,4.3,True
+2025-06-04T18:53:12Z,add_to_cart,U4320,S17074,tablet,google_ads,C205,P738,Yoga Mat,Fitness,907.18,17,44,S695,Tech Trends,Indore,UPI,18-24,male,4.6,False
+2025-06-04T18:53:13Z,add_to_cart,U2492,S52374,desktop,email_campaign,C812,P445,Gold Necklace,Jewelry,20223.0,13,40,S620,Wellness World,Mumbai,UPI,18-24,other,4.4,True
+2025-06-04T18:53:14Z,view,U8600,S97439,desktop,organic_search,C452,P772,Lehenga Choli,Clothing,5196.34,13,95,S818,Kitchen King,Kanpur,UPI,18-24,female,3.7,False
+2025-06-04T18:53:15Z,purchase,U9880,S93947,desktop,organic_search,C500,P667,Gold Necklace,Jewelry,12907.32,18,24,S508,Crafty Corner,Delhi,Cash on Delivery,55+,other,3.1,False
+2025-06-04T18:53:16Z,stock_update,U2660,S29423,tablet,friend_referral,C195,P474,Diamond Ring,Jewelry,37478.79,10,70,S848,Home Bliss,Patna,UPI,35-44,male,3.5,True
+2025-06-04T18:53:17Z,stock_update,U774,S65845,tablet,google_ads,C197,P279,Pressure Cooker,Kitchen,963.03,0,75,S346,Step Up,Chennai,Net Banking,45-54,male,4.1,True
+2025-06-04T18:53:18Z,add_to_cart,U3749,S92667,desktop,facebook_ads,C873,P819,Lehenga Choli,Clothing,8355.05,20,24,S573,Wellness World,Ghaziabad,Debit Card,35-44,other,4.8,False
+2025-06-04T18:53:19Z,price_change,U5420,S71441,tablet,email_campaign,C282,P624,Treadmill,Fitness,27892.74,4,86,S213,Crafty Corner,Kanpur,Debit Card,55+,male,3.7,False
+2025-06-04T18:53:20Z,stock_update,U6073,S94027,tablet,organic_search,C462,P591,Self-Help Book,Books,771.94,7,21,S688,Style Sutra,Bhopal,Cash on Delivery,25-34,other,3.0,True
+2025-06-04T18:53:21Z,add_to_cart,U9575,S83189,tablet,facebook_ads,C776,P154,Smart TV,Electronics,62696.03,8,21,S649,Gadget Zone,Surat,Credit Card,45-54,other,5.0,False
+2025-06-04T18:53:22Z,stock_update,U5044,S47128,desktop,email_campaign,C793,P772,Handwoven Rug,Home Decor,1123.63,11,68,S804,Tech Trends,Bhopal,Credit Card,55+,male,4.9,False
+2025-06-04T18:53:23Z,price_change,U1271,S67807,desktop,instagram,C159,P813,Kolhapuri Chappal,Footwear,1153.31,22,25,S376,Fit India,Mumbai,UPI,18-24,other,4.5,True
+2025-06-04T18:53:24Z,add_to_cart,U9649,S61655,desktop,google_ads,C141,P153,Fiction Novel,Books,634.35,5,40,S964,Saree Emporium,Bangalore,Net Banking,18-24,male,3.9,False
+2025-06-04T18:53:25Z,purchase,U5624,S76762,mobile,email_campaign,C453,P402,Silver Anklet,Jewelry,4299.4,27,34,S559,Ethnic Elegance,Jaipur,UPI,55+,male,3.4,False
+2025-06-04T18:53:26Z,view,U5384,S12868,mobile,email_campaign,C609,P993,Dumbbell Set,Fitness,1404.41,22,77,S519,Jewelry Junction,Pune,Cash on Delivery,35-44,female,3.9,False
+2025-06-04T18:53:27Z,price_change,U8023,S48839,mobile,email_campaign,C120,P139,Formal Shoes,Footwear,4719.39,3,44,S549,Traditional Treasures,Ghaziabad,Net Banking,18-24,female,3.5,True
+2025-06-04T18:53:28Z,purchase,U5691,S62019,mobile,google_ads,C411,P372,Running Shoes,Footwear,1597.45,6,17,S783,City Styles,Ghaziabad,Debit Card,18-24,other,3.4,True
+2025-06-04T18:53:29Z,add_to_cart,U5677,S41542,mobile,facebook_ads,C705,P625,Laptop,Electronics,89944.67,3,76,S130,Fashion Fiesta,Delhi,Credit Card,25-34,male,3.0,False
+2025-06-04T18:53:30Z,view,U7113,S35439,mobile,organic_search,C195,P661,Smart TV,Electronics,57381.7,30,71,S908,Step Up,Vadodara,Cash on Delivery,35-44,male,4.2,True
+2025-06-04T18:53:31Z,view,U4743,S69935,desktop,organic_search,C261,P801,Running Shoes,Footwear,3297.65,23,38,S914,Jewel Craft,Ludhiana,Cash on Delivery,25-34,female,3.9,False
+2025-06-04T18:53:32Z,add_to_cart,U9341,S38251,mobile,google_ads,C952,P854,Bluetooth Earbuds,Electronics,3298.64,17,57,S253,Gadget Zone,Lucknow,Debit Card,45-54,female,4.5,True
+2025-06-04T18:53:33Z,purchase,U4727,S57839,desktop,facebook_ads,C980,P173,Dumbbell Set,Fitness,2209.91,13,89,S309,Fit India,Ghaziabad,Credit Card,45-54,female,4.8,False
+2025-06-04T18:53:34Z,stock_update,U1781,S22533,tablet,google_ads,C991,P502,Self-Help Book,Books,612.75,17,94,S837,Tech Trends,Ahmedabad,Debit Card,25-34,other,3.5,True
+2025-06-04T18:53:35Z,price_change,U623,S49289,desktop,organic_search,C760,P152,Wall Art,Home Decor,2734.09,4,92,S367,Trendy Threads,Indore,Cash on Delivery,18-24,female,4.6,False
+2025-06-04T18:53:36Z,price_change,U5425,S13325,mobile,organic_search,C603,P794,Bluetooth Earbuds,Electronics,2931.67,4,80,S788,Health Hub,Indore,Debit Card,25-34,male,3.5,False
+2025-06-04T18:53:37Z,add_to_cart,U3182,S80058,tablet,facebook_ads,C617,P659,Fiction Novel,Books,390.51,20,80,S221,Tech Trends,Lucknow,UPI,55+,male,4.9,False
+2025-06-04T18:53:38Z,stock_update,U4646,S42503,desktop,google_ads,C574,P260,Formal Shoes,Footwear,4642.41,1,27,S193,Crafty Corner,Jaipur,Net Banking,45-54,male,3.2,False
+2025-06-04T18:53:39Z,stock_update,U9253,S27028,desktop,friend_referral,C635,P809,Silk Saree,Clothing,3720.68,13,28,S967,City Styles,Nashik,Debit Card,18-24,male,4.1,False
+2025-06-04T18:53:40Z,stock_update,U8584,S42331,mobile,email_campaign,C382,P661,Formal Shoes,Footwear,4561.3,25,23,S925,Trendy Threads,Jaipur,Cash on Delivery,18-24,female,3.2,True
+2025-06-04T18:53:41Z,stock_update,U2220,S90791,mobile,friend_referral,C930,P292,Denim Jeans,Clothing,1516.79,18,58,S302,Jewelry Junction,Lucknow,Net Banking,45-54,other,4.3,True
+2025-06-04T18:53:42Z,price_change,U9595,S56632,tablet,facebook_ads,C206,P872,Fiction Novel,Books,955.27,1,33,S818,Jewel Craft,Mumbai,Debit Card,45-54,female,4.2,False
+2025-06-04T18:53:43Z,purchase,U444,S42256,desktop,organic_search,C335,P434,Lehenga Choli,Clothing,6650.76,21,81,S170,Style Sutra,Mumbai,Debit Card,25-34,male,4.2,True
+2025-06-04T18:53:44Z,view,U7672,S49657,tablet,friend_referral,C975,P327,Kolhapuri Chappal,Footwear,987.16,6,89,S342,City Styles,Jaipur,UPI,45-54,male,5.0,True
+2025-06-04T18:53:45Z,purchase,U5780,S20854,mobile,email_campaign,C423,P916,Handwoven Rug,Home Decor,2545.22,1,53,S384,Ethnic Elegance,Hyderabad,Credit Card,45-54,male,4.0,False
+2025-06-04T18:53:46Z,stock_update,U4871,S19454,tablet,facebook_ads,C692,P779,Formal Shoes,Footwear,4040.46,13,19,S444,Wellness World,Delhi,Debit Card,18-24,other,3.0,True
+2025-06-04T18:53:47Z,add_to_cart,U3125,S76005,tablet,email_campaign,C346,P593,Self-Help Book,Books,787.15,29,68,S717,Kitchen King,Nashik,UPI,55+,female,3.2,False
+2025-06-04T18:53:48Z,stock_update,U2370,S68745,desktop,friend_referral,C138,P390,Smartphone,Electronics,26879.68,22,65,S223,Traditional Treasures,Ghaziabad,UPI,18-24,male,4.0,False
+2025-06-04T18:53:49Z,purchase,U9441,S65706,desktop,instagram,C501,P143,Formal Shoes,Footwear,4342.0,20,21,S489,Jewel Craft,Jaipur,Net Banking,35-44,other,3.3,False

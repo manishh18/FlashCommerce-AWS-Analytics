@@ -213,17 +213,6 @@ To deploy and run this project:
 * **Timezone Handling:** Ensuring consistent timezone handling (converting to IST) for accurate time-based analysis (`event_time_ist`, `event_date`, `hour_of_day`).
 * **Dynamic Data Enrichment:** Leveraging UDFs in Glue to dynamically add `region`, `city_tier`, `latitude`, and `longitude` based on city data demonstrated effective data enrichment strategies.
 
-## Future Scope
-
-* **Machine Learning Integration:** Integrate machine learning models for advanced analytics, such as demand forecasting and dynamic pricing recommendations.
-* **Customer Sentiment Analysis:** Incorporate customer sentiment analysis from product reviews to provide insights into customer satisfaction.
-* **Enhanced User Interface:** Expand the dashboard to a mobile-friendly UI or embed it directly within seller portals for easier access and deeper integration.
-* **Real-time Anomaly Detection:** Implement real-time anomaly detection on key metrics (e.g., sudden drops in sales, unusual traffic patterns) using AWS services like Kinesis Analytics or Amazon Lookout for Metrics.
-* **Multi-Tenancy Improvements:** Further refine the architecture for robust multi-tenancy, ensuring data isolation and performance for a large number of sellers.
-
-## Contributors
-
-* [Your Name/GitHub Handle]
 
 ## License
 

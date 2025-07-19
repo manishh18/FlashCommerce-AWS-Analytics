@@ -31,11 +31,11 @@ FlashCommerce is a real-time e-commerce analytics solution designed to empower s
 
 ## Problem Statement
 
-E-commerce sellers often struggle with obtaining quick insights into customer behavior and product performance. Traditional sales reports are delayed and static, hindering real-time decision-making regarding stock, pricing, and product strategies. It's hard for them to track which products are performing well in real time.
+E-commerce sellers often struggle with obtaining quick insights into customer behavior and product sales. It's hard for them to track which products are performing well in real time. Traditional sales reports are delayed and static, limiting sellers decision making ability in real-time (stocks, pricing etc).
 
 ## Project Goal
 
-The primary goal of this project is to create a real-time dashboard that enables sellers to analyze their sales and identify trending products using various AWS services.
+The primary goal of this project is to create a real-time dashboard that helps sellers analyze their sales and trending products using AWS.
 
 ## Objectives
 
@@ -87,31 +87,10 @@ The project implements a Medallion Architecture (Bronze, Silver, Gold layers) wi
 
 ## Dashboard Snapshots
 
-Here are some snapshots from the Amazon QuickSight dashboard, providing real-time insights:
+Here are some snapshots from the Amazon QuickSight dashboard:
 
-### Total Revenue
-![Total Revenue](screenshots/dashboard_total_revenue.png)
-*A snapshot showing the total revenue generated.*
-
-### Cities Revenue Map
-![Cities Revenue Map](screenshots/dashboard_cities_revenue_map.png)
-*A geographical heatmap illustrating revenue distribution across different Indian cities.*
-
-### Conversion Ratio
-![Conversion Ratio](screenshots/dashboard_conversion_ratio.png)
-*This funnel chart displays the conversion rates from product views to add-to-cart and ultimately to purchases.*
-
-### Total Profit By Product Category
-![Total Profit By Product Category](screenshots/dashboard_profit_by_category.png)
-*A pie chart showing the distribution of total profit across different product categories.*
-
-### Latest Orders
-![Latest Orders](screenshots/dashboard_latest_orders.png)
-*A table showcasing recent customer orders with key details like product, price, and payment type.*
-
-### Average Profit Margin
-![Average Profit Margin](screenshots/dashboard_average_profit_margin.png)
-*An indicator showing the average profit margin across all sales.*
+![Dashboard Overview](screenshots/dashboard.png)
+*An overview of the QuickSight dashboard displaying key e-commerce metrics.*
 
 ## Technical Implementation Details
 
@@ -168,36 +147,36 @@ Here are some snapshots from the Amazon QuickSight dashboard, providing real-tim
 This section provides direct screenshots from the AWS console, demonstrating the deployed components and data states.
 
 ### S3 Data Lake Buckets Overview
-![S3 E-commerce Lake Bucket Overview](screenshots/s3_ecom_lake_bucket_overview.jpg)
+![S3 E-commerce Lake Bucket Overview](screenshots/s3_ecom_lake_bucket_overview.png)
 *An overview of the `e-com-lake` S3 bucket, showing the various data layers: `Bronze_Layer/`, `Silver_Layer/`, `Gold_Layer/`, `Invalid_Layer/`, and `athena_result/`.*
 
 ### Bronze Layer in S3
-![Bronze Layer in S3](screenshots/s3_bronze_layer.jpg)
+![Bronze Layer in S3](screenshots/s3_bronze_layer.png)
 *Screenshot of the `Bronze_Layer` in S3, showing daily partitions (e.g., `day=05/`, `day=06/`) where raw Kinesis data is stored.*
 
 ### Silver Layer in S3
-![Silver Layer in S3](screenshots/s3_silver_layer.jpg)
+![Silver Layer in S3](screenshots/s3_silver_layer.png)
 *Screenshot of the `Silver_Layer` in S3, demonstrating data partitioned by `seller_id`, indicating cleaned and structured data ready for further processing.*
 
 ### Gold Layer in S3
-![Gold Layer in S3](screenshots/s3_gold_layer.jpg)
+![Gold Layer in S3](screenshots/s3_gold_layer.png)
 *Screenshot of the `Gold_Layer` in S3, displaying the various aggregated tables (e.g., `city_sales/`, `daily_metrics/`, `event_counts/`, `geo_heatmap/`, `order_details/`, `product_metrics/`) prepared for analytics.*
 
 ### AWS Glue Bronze Crawler Runs
-![AWS Glue Bronze Crawler Runs](screenshots/glue_bronze_crawler_runs.jpg)
-*View of the `bronze-crawler` runs in AWS Glue, showing successful completion for schema discovery in the Bronze Layer.*
+![AWS Glue Bronze Crawler Runs](screenshots/glue_bronze_crawler_runs.png)
+*View of the `glue_bronze_crawler_runs.png` in AWS Glue, showing successful completion for schema discovery in the Bronze Layer.*
 
 ### AWS Glue Gold Crawler Configuration
-![AWS Glue Gold Crawler Configuration](screenshots/glue_gold_crawler_config.jpg)
-*Configuration details for the `gold_crawler` in AWS Glue, highlighting its S3 data source (`s3://e-com-lake/Gold_Layer/`) and the target database (`gold_db`).*
+![AWS Glue Gold Crawler Configuration](screenshots/glue_gold_crawler_config.png)
+*Configuration details for the `glue_gold_crawler_config.png` in AWS Glue, highlighting its S3 data source (`s3://e-com-lake/Gold_Layer/`) and the target database (`gold_db`).*
 
 ### AWS Glue Gold Crawler Runs
-![AWS Glue Gold Crawler Runs](screenshots/glue_gold_crawler_runs.jpg)
-*Overview of the `gold_crawler` runs, confirming successful schema updates and partition discoveries for the Gold Layer tables.*
+![AWS Glue Gold Crawler Runs](screenshots/glue_gold_crawler_runs.png)
+*Overview of the `glue_gold_crawler_runs.png`, confirming successful schema updates and partition discoveries for the Gold Layer tables.*
 
 ### Amazon Athena Querying Gold Layer
-![Amazon Athena Querying Gold Layer](screenshots/athena_gold_db_query.jpg)
-*Screenshot from Amazon Athena, demonstrating a successful query against a table (`gold_db.goldorder_details`) in the Gold Layer, confirming data accessibility for analysis.*
+![Amazon Athena Querying Gold Layer](screenshots/Athena2.png)
+*Screenshot from Amazon Athena, demonstrating a successful query against a table in the Gold Layer, confirming data accessibility for analysis.*
 
 ---
 

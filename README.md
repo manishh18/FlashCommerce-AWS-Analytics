@@ -87,7 +87,7 @@ The project implements a Medallion Architecture (Bronze, Silver, Gold layers) wi
 
 ## Dashboard Snapshots
 
-Here are some snapshots from the Amazon QuickSight dashboard:
+Here is an overview of the Amazon QuickSight dashboard:
 
 ![Dashboard Overview](screenshots/dashboard.png)
 *An overview of the QuickSight dashboard displaying key e-commerce metrics.*
@@ -123,7 +123,7 @@ Here are some snapshots from the Amazon QuickSight dashboard:
     * **Event Counts:** Aggregated counts of view, add-to-cart, and purchase events, pivoted by `event_type` for each seller.
     * **City Sales:** Total revenue and total orders grouped by seller and city/region/tier.
     * **Geo Heatmap:** Total revenue and total orders grouped by city (across all sellers).
-    * **Daily Metrics:** Daily total revenue, profit, and orders per seller.
+    * **Daily Metrics:** Tracks daily total revenue, profit, and orders per seller.
 * These aggregated tables are written to the **Gold Layer in S3** as Parquet files, with appropriate partitioning for optimized querying.
 
 ### Data Cataloging & Querying (AWS Glue Crawler & Athena)
@@ -148,7 +148,7 @@ This section provides direct screenshots from the AWS console, demonstrating the
 
 ### S3 Data Lake Buckets Overview
 ![S3 E-commerce Lake Bucket Overview](screenshots/s3_ecom_lake_bucket_overview.png)
-*An overview of the `e-com-lake` S3 bucket, showing the various data layers: `Bronze_Layer/`, `Silver_Layer/`, `Gold_Layer/`, `Invalid_Layer/`, and `athena_result/`.*
+*An overview of the `e-com-lake` S3 bucket, showing the various data layers: `Bronze_Layer/`, `Gold_Layer/`, `Invalid_Layer/`, `Silver_Layer/`, and `athena_result/`.*
 
 ### Bronze Layer in S3
 ![Bronze Layer in S3](screenshots/s3_bronze_layer.png)
@@ -199,19 +199,12 @@ To deploy and run this project:
 7.  **AWS Glue Crawlers Creation:**
     * In the AWS Glue console, create two new Glue Crawlers:
         * `bronze-crawler`: Point it to `s3://e-com-lake/Bronze_Layer/`.
-        * `gold_crawler`: Point it to `s3://e-com-lake/Gold_Layer/`.
+        * `gold-crawler`: Point it to `s3://e-com-lake/Gold_Layer/`.
         * Configure them to run on demand or on a schedule, and create/update tables in the Glue Data Catalog.
 8.  **QuickSight Setup:**
     * In Amazon QuickSight, create a new data set pointing to the tables created by the `gold_crawler` in the Glue Data Catalog via Athena.
     * Design and build your dashboards using the various aggregated metrics available in the Gold Layer.
 
-## Challenges and Learnings
-
-* **Data Quality and Validation:** A significant challenge was ensuring data quality from the raw Kinesis stream. This was addressed by implementing comprehensive validation and cleaning logic in the Silver layer Glue job, including handling missing values, standardizing formats, and filtering out invalid records based on business rules.
-* **IAM Permissions:** Correctly configuring IAM roles and policies for Lambda, Glue, S3, and Kinesis was crucial and required careful attention to the principle of least privilege.
-* **Performance Optimization (Glue):** Caching the `silver_df` in the Gold Glue job significantly improved performance for subsequent transformations.
-* **Timezone Handling:** Ensuring consistent timezone handling (converting to IST) for accurate time-based analysis (`event_time_ist`, `event_date`, `hour_of_day`).
-* **Dynamic Data Enrichment:** Leveraging UDFs in Glue to dynamically add `region`, `city_tier`, `latitude`, and `longitude` based on city data demonstrated effective data enrichment strategies.
 
 
 ## License
